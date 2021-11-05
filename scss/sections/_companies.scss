@@ -1,0 +1,16 @@
+@use '../custom' as *;
+.companies {
+    color: $white;
+}
+.list__item {
+    width: auto;
+}
+.card-title--star::before {
+    position: absolute;
+    left: calc(50% - 130px);
+    font-family: "fontello";
+    font-weight: 100;
+    content: "\e803";
+    font-size: 1rem;
+    color: $white;
+}

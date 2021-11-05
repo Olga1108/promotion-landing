@@ -1,0 +1,130 @@
+
+// THEME COLORS
+$primary: #50c3af;
+$secondary: #ced1d6;
+$light: #f5f5f5;
+$h3-h4-title-color: #384048;
+$body-text-color: #787b80;
+$gray-bg: #eeeeef;
+$card-border-color: transparent;
+$font-size-base: 0.85rem;
+$body-color: #787b80;
+
+// WHITE AND GRAY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+.container {
+    max-width: 600px !important;
+}
+ul,
+li {
+    list-style: none;
+}
+.card {
+    background-color: none;
+}
+.card .separator--size-s {
+    margin-right: auto;
+    margin-left: auto;
+}
+.separator {
+    background-color: $secondary;
+}
+.card-body--left {
+    padding-top: 35px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn-banner {
+    align-self: center;
+}
+.btn {
+    display: flex;
+    width: fit-content;
+    color: $white !important;
+    font-size: 0.9rem;
+}
+
+.card-body--themeforest {
+    padding-top: 30px;
+    padding-left: 0;
+    @media (min-width: 767px) {
+        padding-top: 0;
+        padding-left: 30px;
+      }
+}
+.link--grey {
+    color: $gray-600;
+}
+
+.icon-gplus,
+.icon-facebook,
+.icon-twitter {
+    font-size: 1rem;
+    color: #d2d5da;
+}
+.icon-gplus:hover,
+.icon-facebook:hover,
+.icon-twitter:hover {
+    color: $gray-500;
+}
+
+@mixin before($content) {
+    position: absolute;
+    left: 0;
+    font-family: "fontello";
+    content: $content;
+    font-size: 1.45rem;
+    color: #d2d5da;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: #787b80;
+    }
+    .companies {
+        background-color: #50c3af;
+    }
+    .template-types,
+    .features,
+    .themeforest {
+        background-color: #f5f5f5;
+        .card {
+            background-color: #f5f5f5;
+        }
+    }
+    .features .card {
+           padding-left: 8px;
+           padding-right: 8px;
+    }
+    .services .card {
+        position: relative;
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 40px;
+        .card-icon {
+            position: absolute;
+            bottom: 150px;
+            left: 40%;
+        }
+    }
+    .text-secondary {
+        color: #ced1d6;
+    }
+}
+
+
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

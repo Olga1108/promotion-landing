@@ -1,0 +1,128 @@
+@use '../custom' as *;
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../../assets/fonts/fontello.eot?37036018');
+    src: url('../../assets/fonts/fontello.eot?37036018#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/fontello.woff2?37036018') format('woff2'),
+         url('../../assets/fonts/fontello.woff?37036018') format('woff'),
+         url('../../assets/fonts/fontello.ttf?37036018') format('truetype'),
+         url('../../assets/fonts/fontello.svg?37036018#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?37036018#fontello') format('svg');
+    }
+  }
+  */
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-lifebuoy:before { content: '\e800'; } /* '' */
+  .icon-paper-plane:before { content: '\e801'; } /* '' */
+  .icon-pencil:before { content: '\e802'; } /* '' */
+  .icon-star-empty:before { content: '\e803'; } /* '' */
+  .icon-twitter:before { content: '\f309'; } /* '' */
+  .icon-facebook:before { content: '\f30c'; } /* '' */
+  .icon-gplus:before { content: '\f30f'; } /* '' */
+  
+
+@font-face {
+    font-family: "belinda";
+    src: url("../../assets/fonts/Belinda.ttf"),
+        url("../../assets/fonts/Belinda") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ubuntu";
+    src: url("../../assets/fonts/Ubuntu-B.ttf"),
+        url("../../assets/fonts/Ubuntu-B") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "cabin";
+    src: url("../../assets/fonts/Cabin-Regular.otf"),
+        url("../../assets/fonts/Cabin-Regula") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "nexa";
+    src: url("../../assets/fonts/Nexa-Trial-Heavy.woff");
+    src: url("../../assets/fonts/Nexa-Trial-Regular.woff2"),
+        url("../../assets/fonts/Nexa-Trial-Regular.woff"),
+        url("../../assets/fonts/Nexa-Trial-Heavy.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font: 700 3.3rem "Ubuntu", "times new roman", times, roman, serif;
+}
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $h3-h4-title-color;
+}
+.banner-subtitle {
+    color: white;
+}
+.card-title--star {
+    color: $white;
+}
+.list__item {
+    color: $gray-200;
+}
+.list__item:first-child {
+    font: 500 1.5rem "Belinda", script;
+}
+.list__item:nth-child(2) {
+    font: 300 1.5rem "Nexa";
+}
+.list__item:nth-child(3) {
+    font: 300 1.8rem "Cabin";
+}
+.list__item:nth-child(4) {
+    font: 700 1.5rem "Nexa";
+}

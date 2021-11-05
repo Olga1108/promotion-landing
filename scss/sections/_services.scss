@@ -1,0 +1,11 @@
+@use '../custom' as *;
+.services,
+.fully-supported,
+.contacts {
+    background-color: $gray-bg;
+    .card {
+        background: $gray-bg;
+        border: none;
+    }
+}
+

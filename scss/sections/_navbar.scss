@@ -1,0 +1,9 @@
+@use '../custom' as *;
+li {
+    padding: 0 0.3rem;
+    a {
+        color: $white !important;
+        text-transform: uppercase;
+        font: 500 0.85rem "PT Sans", sans-serif;
+    }
+}

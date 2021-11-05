@@ -1,0 +1,23 @@
+@use '../custom' as *;
+.fully-supported .card {
+    background: $gray-bg;
+    padding: 32px 0 25px;
+}
+.card-body--left {
+    .separator {
+        margin-left: 0;
+    }
+}
+.card-title--ball,
+.card-title--plane,
+.card-title--pencil {
+    padding-left: 35px;
+}
+.card-title--star {
+    padding-left: 15px;
+}
+
+.card-title--ball::before {
+   @include before("\e800");
+}
+

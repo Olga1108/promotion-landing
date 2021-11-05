@@ -1,0 +1,10 @@
+@use '../custom' as *;
+
+.header {
+    padding-top: 15px;
+    background: center center / cover no-repeat;
+    color: $white;
+}
+.nav-link:hover{
+    color: #50c3af !important;
+}

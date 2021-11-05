@@ -1,0 +1,8 @@
+@use '../custom' as *;
+
+.card-title--plane::before {
+    @include before("\e801");
+}
+.card-title--pencil::before {
+    @include before("\e802");
+}
